@@ -1,0 +1,52 @@
+pipeline {
+    agent {
+        label: 'Agent'
+    }
+
+    options {
+        timeout(time: 30, unit: MINUTES)
+
+    }
+
+    envinorment {
+        def 
+    }
+
+    stages {
+        stage('read') {
+            script {
+                def 
+            }
+        }
+
+        stage('install dependency') {
+            steps {
+                sh """
+                """
+
+            }
+            
+        }
+
+        stage('deploy') {
+            when {
+                expression{
+                    param.
+                }
+            }
+            steps{
+                script{
+                    def params = [
+                        string(name: 'appVersion', value: "${appVersion}")
+                    ]
+                }
+            }
+        }
+    }
+    post {
+
+        always{
+            
+        }
+    }
+}
